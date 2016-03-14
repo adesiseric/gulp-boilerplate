@@ -1,0 +1,14 @@
+include _mixins/main
+
+doctype html
+html
+    head
+        title gulp-useref-example
+    body(ng-app="app")
+        div Hello
+            p 1 + 1 = {{1 + 1}}
+
+        +script-min-init
+        +script-min('vendor/angular/angular.js')
+        +script-min('js/app.js')
+        +script-min-end

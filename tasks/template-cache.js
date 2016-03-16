@@ -13,12 +13,8 @@
             }))
             .pipe($.gulp.dest(dist))
 
-        $.gulp.task('template-cache', () =>
-            templateCache(`${$.deploy.dir}/js`)
-        )
+        $.gulp.task('template-cache', () => templateCache(`${$.deploy.dir}/js`))
 
-        $.gulp.task('template-cache-dist', () =>
-            templateCache(`${$.dist.dir}/js`)
-        )
+        $.gulp.task('template-cache-dist', () => templateCache(`${$.dist.dir}/js`))
     }
 })()

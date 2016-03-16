@@ -16,6 +16,7 @@
         path:require('path'),
         runSequence: require('run-sequence'),
         stylus: require('gulp-stylus'),
+        templateCache: require('gulp-angular-templatecache'),
         tinylr: require('tiny-lr')(),
         uglify: require('gulp-uglify'),
         useref: require('gulp-useref'),

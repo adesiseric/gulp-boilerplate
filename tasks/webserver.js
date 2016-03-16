@@ -2,6 +2,11 @@
     module.exports = ($) => {
         'use strict'
 
-        $.gulp.task('webserver', () => require(`../${$.server}/server.js`)($))
+        const webserver = (server) =>
+            require(`../${$.server}/${server}`)($)
+
+        $.gulp.task('webserver', () => webserver('server'))
+
+        $.gulp.task('webserver-dist', () => webserver('server-dist'))
     }
 })()

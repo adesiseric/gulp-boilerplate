@@ -43,7 +43,6 @@
 
     $.fn = {
         readFolder(folder) {
-            console.log(folder)
             const PATH = $.path.join(__dirname, folder)
 
             const FILES = $.fs.readdirSync(PATH)

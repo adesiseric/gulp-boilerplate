@@ -4,9 +4,10 @@
 
         $.gulp.task('scriptsAll', () =>
             $.gulp
-            .src($.deploy.index)
+            .src($.dist.index)
             .pipe($.useref())
-            .pipe($.gulp.dest($.deploy.dir))
+            .pipe($.gilpif('*.js', $.uglify()))
+            .pipe($.gulp.dest($.dist.dir))
         )
     }
 })()

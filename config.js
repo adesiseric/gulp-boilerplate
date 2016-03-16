@@ -8,12 +8,14 @@
         express: require('express'),
         fs: require('fs'),
         gulp: require('gulp'),
+        gulpif: require('gulp-if'),
         jade: require('gulp-jade'),
         ngAnnotate: require('gulp-ng-annotate'),
         open: require('open'),
         path:require('path'),
         runSequence: require('run-sequence'),
         tinylr: require('tiny-lr')(),
+        uglify: require('gulp-uglify'),
         useref: require('gulp-useref'),
         wrap: require('gulp-wrap'),
 
@@ -29,6 +31,12 @@
         dev: {
             dir: './public',
             vendor: './public/_vendor'
+        },
+
+        dist: {
+            dir: './_dist',
+            index: './_dist/index.html',
+            vendor: './_dist/vendor'
         }
     }
 

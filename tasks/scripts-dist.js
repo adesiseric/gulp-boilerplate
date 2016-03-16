@@ -2,7 +2,7 @@
     module.exports = ($) => {
         'use strict'
 
-        $.gulp.task('scripts', () =>
+        $.gulp.task('scripts-dist', () =>
             $.gulp
             .src([
                 `${$.dev.dir}/**/*.js`,
@@ -18,7 +18,7 @@
                 })();`
             ))
             .pipe($.ngAnnotate())
-            .pipe($.gulp.dest($.deploy.dir))
+            .pipe($.gulp.dest($.dist.dir))
         )
     }
 })()

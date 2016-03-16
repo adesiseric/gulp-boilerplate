@@ -9,6 +9,7 @@
         fs: require('fs'),
         gulp: require('gulp'),
         gulpif: require('gulp-if'),
+        htmlMin: require('gulp-htmlmin'),
         jade: require('gulp-jade'),
         ngAnnotate: require('gulp-ng-annotate'),
         open: require('open'),

@@ -15,6 +15,7 @@
         open: require('open'),
         path:require('path'),
         runSequence: require('run-sequence'),
+        stylus: require('gulp-stylus'),
         tinylr: require('tiny-lr')(),
         uglify: require('gulp-uglify'),
         useref: require('gulp-useref'),
@@ -26,17 +27,20 @@
         deploy: {
             dir: './_deploy/public',
             index: './_deploy/public/index.html',
-            vendor: './_deploy/public/vendor',
+            styles: './_deploy/public/styles',
+            vendor: './_deploy/public/vendor'
         },
 
         dev: {
             dir: './public',
+            styles: './public/styles',
             vendor: './public/_vendor'
         },
 
         dist: {
             dir: './_dist',
             index: './_dist/index.html',
+            styles: './_dist/styles',
             vendor: './_dist/vendor'
         }
     }

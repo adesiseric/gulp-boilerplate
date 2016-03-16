@@ -4,6 +4,10 @@ doctype html
 html
     head
         title gulp-useref-example
+        link(
+            rel="stylesheet"
+            href="styles/main.css"
+        )
     body(ng-app="app")
         div(ng-controller="AppCtrl as appCtrl") Hello
             p 1 + 1 = {{1 + 1}}

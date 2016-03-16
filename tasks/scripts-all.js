@@ -6,7 +6,7 @@
             $.gulp
             .src($.dist.index)
             .pipe($.useref())
-            .pipe($.gilpif('*.js', $.uglify()))
+            .pipe($.gulpif('*.js', $.uglify()))
             .pipe($.gulp.dest($.dist.dir))
         )
     }

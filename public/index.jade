@@ -9,11 +9,12 @@ html
             href="styles/main.css"
         )
     body(ng-app="app")
-        div(ng-controller="AppCtrl as appCtrl") Hello
-            p 1 + 1 = {{1 + 1}}
+        div(ng-controller="MainCtrl as mainCtrl")
+            p {{mainCtrl.msg}}
 
         +script-min-init
         +script-min('vendor/angular/angular.js')
         +script-min('js/templates.js')
         +script-min('js/app.js')
+        +script-min('js/mainCtrl.js')
         +script-min-end
